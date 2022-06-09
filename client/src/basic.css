@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input {
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    margin: 5px 0;
+    display: block;
+}
+
+button {
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #604fff;
+    color: #fff;
+    border: 0;
+    outline: none;
+    padding: 5px 10px;
+    opacity: 1;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:focus {
+    color: #000;
+}

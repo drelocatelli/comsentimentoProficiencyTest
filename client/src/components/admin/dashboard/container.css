@@ -1,0 +1,85 @@
+.container-fluid{
+    margin: 10vh auto;
+    width: 80%;
+    background: #f9f9f9;
+    box-shadow: 0px 7px 4px #efefef;
+    padding: 20px;
+    min-height: 50vh;
+}
+
+.table td {
+    padding: 5px;
+}
+
+.notices {
+    border-top: 1px solid #ccc;
+    margin: 5vh 0;
+    padding: 5vh 0;
+}
+.notice {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding:5px;
+}
+
+.notice .info {
+    margin: 5px 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #575757;
+}
+
+.notice .info .separator {
+    color: #ccc;
+}
+
+.notice .description {
+    min-height: 50px;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+.notice .info .status_OPEN {
+    color: rgb(42, 190, 5);
+}
+
+.notice .info .status_CLOSED {
+    color: red;
+}
+
+.notice .info li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.container-fluid .menu {
+    background-color: #fff;
+    width: 50%;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.container-fluid .menu li {
+    display: inline;
+    list-style: none;
+}
+
+.container-fluid .menu li a{
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.container-fluid .menu li a:hover {
+    background-color: #00ffbe;
+}
+
+@media screen and (max-width: 800px) {
+    .container-fluid .menu {
+        width: 100%;
+        margin-bottom: 10vh;
+    }
+}

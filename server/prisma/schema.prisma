@@ -1,0 +1,43 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model user {
+  id        Int         @id @default(autoincrement())
+  email     String      @unique
+  status    user_status @default(INACTIVE)
+  name      String
+  password  String
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @default(now())
+  notice    notice[]
+}
+
+enum user_status {
+  ACTIVE
+  INACTIVE
+}
+
+model notice {
+  id          Int           @id @default(autoincrement())
+  userId      Int
+  title       String
+  description String        @db.Text
+  date        String
+  file        String
+  status      notice_status
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @default(now())
+  user        user          @relation(fields: [userId], references: [id])
+}
+
+enum notice_status {
+  OPEN
+  CLOSED
+}
+

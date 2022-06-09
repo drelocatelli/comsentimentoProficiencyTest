@@ -1,0 +1,28 @@
+.panel {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+
+.login {
+    background-color: #f9f9f9;
+    padding: 30px 5%;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 3px #ccc;
+}
+
+.login .form {
+    margin-top: 20px;
+}
+
+.login input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.errorMsg {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
